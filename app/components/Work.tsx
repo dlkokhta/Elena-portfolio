@@ -108,7 +108,7 @@ export default function Work() {
         />
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[320px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[320px]">
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
@@ -116,7 +116,7 @@ export default function Work() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 + i * 0.1 }}
               className={`group relative overflow-hidden cursor-pointer ${
-                project.size === "large" ? "md:col-span-2" : "md:col-span-1"
+                project.size === "large" ? "md:col-span-2 lg:col-span-2" : ""
               }`}
             >
               {/* Photo */}

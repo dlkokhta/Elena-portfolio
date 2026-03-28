@@ -45,8 +45,8 @@ export default function Contact() {
             {...up(0.1)}
             className="font-serif text-6xl md:text-7xl lg:text-8xl font-light leading-[1.05] tracking-tight text-white"
           >
-            Let&apos;s work
-            <br />
+            Let&apos;s work{" "}
+            <br className="md:hidden" />
             <span className="italic text-white/50">together.</span>
           </motion.h2>
         </div>
@@ -187,7 +187,7 @@ export default function Contact() {
               <span className="text-[10px] tracking-[0.3em] uppercase text-white/25 font-light">
                 Follow
               </span>
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-4 md:gap-6">
                 {[
                   { label: "Instagram", href: "https://instagram.com" },
                   { label: "Pinterest", href: "https://pinterest.com" },

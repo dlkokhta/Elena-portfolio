@@ -57,7 +57,7 @@ export default function About() {
             </motion.h2>
           </div>
 
-          <div className="flex gap-12 pb-2">
+          <div className="flex flex-wrap gap-8 md:gap-12 pb-2">
             {stats.map(({ value, label }, i) => (
               <motion.div key={label} {...up(0.2 + i * 0.1)} className="flex flex-col gap-1">
                 <span className="font-serif text-4xl font-light text-white">{value}</span>
