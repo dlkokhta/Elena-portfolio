@@ -1,3 +1,5 @@
+import About from "./components/About";
+
 export default function Home() {
   return (
     <main className="flex flex-col">
@@ -11,14 +13,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section
-        id="about"
-        className="min-h-screen flex items-center justify-center"
-      >
-        <p className="font-serif text-white/20 tracking-[0.3em] uppercase text-sm">
-          Coming soon — About
-        </p>
-      </section>
+      <About />
 
       <section
         id="contact"
